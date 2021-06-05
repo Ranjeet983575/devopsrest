@@ -10,7 +10,9 @@ public class Controller {
 
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello GitHub Devops Webhook";
+		return "Hello Github with jenkins web-hook";
+
+		
 	}
 
 }
