@@ -10,6 +10,10 @@ public class DevopsrestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsrestApplication.class, args);
 	}
+	
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(DevopsrestApplication.class);
+	}
 
 
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
