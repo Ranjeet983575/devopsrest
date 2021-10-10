@@ -17,7 +17,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		 <start-class>com.example.devopsrest.DevopsrestApplication</start-class>
+		<start-class>com.example.devopsrest.DevopsrestApplication</start-class>
+		<sonar.organization>ranjeet983575</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
@@ -51,6 +53,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.3.0.603</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>sonar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
