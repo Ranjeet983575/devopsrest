@@ -15,4 +15,11 @@ public class Controller {
 		
 	}
 
+	@GetMapping("/hi")
+	public String hi() {
+		return "Hello From Server";
+
+
+	}
+
 }
