@@ -2,11 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone and Clean') {
+        stage('Clean') {
             steps {
-                sh "git clone https://github.com/Ranjeet983575/devopsrest"
                 sh "mvn clean"
-
             }
         }
         stage('Unit Test') {
