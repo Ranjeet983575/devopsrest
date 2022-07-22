@@ -16,5 +16,10 @@ class DevopsrestApplicationTests {
 	void hello() {
 		Assert.notNull(controller.hello());
 	}
+	@Test
+	void hi() {
+		Assert.isNull(controller.hi());
+	}
+
 
 }
