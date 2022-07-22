@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 8095
-ADD target/devopsrestapi.jar devopsrestapi.jar
-ENTRYPOINT ["java","-jar","/devopsrestapi.jar"]
+EXPOSE 8080
+ADD target/devopsrestapi-0.0.1.jar devopsrestapi-0.0.1.jar
+ENTRYPOINT ["java","-jar","/devopsrestapi-0.0.1.jar"]
