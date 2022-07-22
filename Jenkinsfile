@@ -6,7 +6,7 @@ pipeline {
             steps {
                 //sh "mvn clean"
                 //bat "rm -rf devopsrest"
-                bat "git clone https://github.com/Ranjeet983575/devopsrest.git"
+                //bat "git clone https://github.com/Ranjeet983575/devopsrest.git"
                 bat "mvn clean"
             }
         }
