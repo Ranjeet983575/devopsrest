@@ -22,5 +22,11 @@ pipeline {
                bat "mvn package"
             }
         }
+        stage('Docker Image') {
+                    steps {
+                       //sh "mvn package"
+                       bat "docker build -t devopsrestapi ."
+                    }
+                }
     }
 }
