@@ -4,20 +4,19 @@ pipeline {
     stages {
         stage('Clone and Clean') {
             steps {
-                echo 'Compiling..'
-                bat "mvn clean compile"
+                sh "git clone https://github.com/Ranjeet983575/devopsrest"
+                sh "mvn clean -f devopsrest"
+
             }
         }
         stage('Unit Test') {
             steps {
-                echo 'Testing..'
-                bat "mvn test"
+                sh "mvn test -f devopsrest"
             }
         }
         stage('Build') {
             steps {
-                echo 'Building....'
-                bat "mvn package"
+               sh "mvn package -f devopsrest"
             }
         }
     }
