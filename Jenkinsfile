@@ -32,7 +32,7 @@ pipeline {
                       steps {
                          withCredentials([string(credentialsId: 'ranjeet983575', variable: 'DockerHub')]) {
                                      bat "docker login -u ranjeet983575 -p ${DockerHub}"
-                                     bat "docker push devopsrest"
+                                     bat "docker push ranjeet983575/devopsrestapi"
                                  }
                       }
                   }
