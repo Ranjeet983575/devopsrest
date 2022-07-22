@@ -5,18 +5,18 @@ pipeline {
         stage('Clone and Clean') {
             steps {
                 sh "git clone https://github.com/Ranjeet983575/devopsrest"
-                sh "mvn clean -f devopsrest"
+                sh "mvn clean"
 
             }
         }
         stage('Unit Test') {
             steps {
-                sh "mvn test -f devopsrest"
+                sh "mvn test"
             }
         }
         stage('Build') {
             steps {
-               sh "mvn package -f devopsrest"
+               sh "mvn package"
             }
         }
     }
