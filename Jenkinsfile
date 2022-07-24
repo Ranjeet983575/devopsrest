@@ -7,6 +7,7 @@ pipeline {
                 //sh "mvn clean"
                 //bat "rm -rf devopsrest"
                 //bat "git clone https://github.com/Ranjeet983575/devopsrest.git"
+                checkout([$class: 'GitSCM', branches: [[name: '*/develop']], extensions: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/Ranjeet983575/devopsrest.git']]])
                 bat "mvn clean"
             }
         }
