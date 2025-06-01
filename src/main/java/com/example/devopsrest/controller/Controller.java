@@ -8,16 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class Controller {
 
-	@GetMapping("/hello")
-	public String hello() {
-		return "Hello Github with jenkins web-hook cvd ";
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello Github with jenkins web-hook cvd ";
+    }
 
-		
-	}
-
-	@GetMapping("/hi")
-	public String hi() {
-		return "Hello From Server";
-	}
 
 }

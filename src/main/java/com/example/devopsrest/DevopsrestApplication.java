@@ -11,7 +11,6 @@ public class DevopsrestApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsrestApplication.class, args);
 	}
-
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 
 		return application.sources(DevopsrestApplication.class);
