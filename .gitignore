@@ -1,33 +1,55 @@
-HELP.md
-target/
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Logs ===
+*.log
+logs/
+*.pid
+
+# === Maven ===
+/target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+.mvn/timing.properties
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# === Gradle ===
+/build/
+/.gradle/
+!gradle/wrapper/gradle-wrapper.jar
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# === IntelliJ IDEA ===
+.idea/
 *.iml
+*.iws
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# === Eclipse ===
+.project
+.classpath
+.settings/
+bin/
 
-### VS Code ###
+# === VS Code ===
 .vscode/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Test Reports ===
+/test-output/
+/surefire-reports/
+/jacoco.exec
+
+# === Environment Files ===
+.env
+*.env
+
+# === Temporary Files ===
+*.swp
+*.bak
+*.tmp
+*.orig
